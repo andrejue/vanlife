@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import VansData from '../VansData';
+//import VansData from '../VansData';
 import "../server";
 import './Vans.css';
 
 export default function Vans() {
-const [vans, setVans] = React.useState([])
+const [vans, setVans] = useState([])
 React.useEffect(() => {
     fetch("/api/vans")
         .then(res => res.json())
@@ -13,7 +13,7 @@ React.useEffect(() => {
 
 const vanElements = vans.map(van => (
     <div key={van.id} className="van-tile">
-      <img src={van.imageUrl} />
+      <img src={van.imageUrl} alt='Van img'/>
       <div className="van-info">
         <h3>{van.name}</h3>
         <p>${van.price}<span>/day</span></p>
