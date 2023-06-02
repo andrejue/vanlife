@@ -1,0 +1,21 @@
+.about-container {
+   display: flex;
+   flex-direction: column;
+   background: url("../assets/about_bg.jpg") no-repeat center center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: auto;
+   padding: 45px 10%;
+   color: #fff;
+}
+
+.about-container h1 {
+   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.497);
+}
+
+.about-container p {
+   padding-top: 2rem;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.615);
+}
